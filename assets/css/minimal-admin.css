@@ -1,0 +1,6 @@
+#admin-topbar #admin-mode-toggle,
+[data-nav-id='/error'],
+[data-nav-id='/unsubscribe'],
+#footer {
+  display: none;
+}

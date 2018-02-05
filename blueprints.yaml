@@ -1,0 +1,32 @@
+name: Minimal Admin
+version: 1.0.0
+description: Provide a minimal version of the admin interface to a group of user limited to page edition
+icon: lock
+keywords: 'grav, plugin, admin, minimal'
+license: MIT
+author:
+  name: jimblue
+homepage: https://github.com/jimblue/grav-plugin-minimal-admin
+bugs: https://github.com/jimblue/grav-plugin-minimal-admin/issues
+docs: https://github.com/jimblue/grav-plugin-minimal-admin/blob/develop/README.md
+dependencies:
+  - admin
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 1
+      options:
+        '1': PLUGIN_ADMIN.ENABLED
+        '0': PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    group:
+      type: select
+      label: PLUGIN_MINIMAL_ADMIN.GROUP.LABEL
+      data-options@: '\Grav\Common\User\Group::groupNames'
+      validate:
+        required: true
