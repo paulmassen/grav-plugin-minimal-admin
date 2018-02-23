@@ -1,7 +1,7 @@
-#admin-sidebar #admin-logo,
-#admin-topbar #admin-mode-toggle,
+#admin-mode-toggle,
+#pages-legend,
 [data-nav-id='/error'],
 [data-nav-id='/unsubscribe'],
 #footer {
-  display: none;
+  display: none !important;
 }
