@@ -1,5 +1,5 @@
 name: Minimal Admin
-version: 1.0.3
+version: 1.0.4
 description: Provide a minimal version of the admin interface to a group of user limited to page edition
 icon: lock
 keywords: 'grav, plugin, admin, minimal'
